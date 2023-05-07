@@ -33,21 +33,21 @@ function Contact() {
     </div>
     <div className="contact-info">
       <div className="wrapper px-16 md:py-36 sm:py-12 py-8 flex flex-wrap justify-around">
-        <div className='item justify-center my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
+        <div className='item  my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
           <img src="/assets/images/contact/i.png" alt=""/>
           <div>
             <div className='text-2xl text-brown font-bold'>Phone</div>
             <a href="tel:971545574911">+971545574911</a>
           </div>
         </div>
-        <div className='item justify-center my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
+        <div className='item  my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
           <img src="/assets/images/contact/i (1).png" alt="" />
           <div>
             <div className='text-2xl text-brown font-bold'>Email</div>
             <a href="mailto:tacosfoxuae@gmail.com">tacosfoxuae@gmail.com</a>
           </div>
         </div>
-        <div className='item justify-center my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
+        <div className='item  my-5 flex items-center gap-4 md:w-1/3 sm:w-1/2 w-full'>
           <img src="/assets/images/contact/i (2).png" alt="" />
           <div>
             <div className='text-2xl text-brown font-bold'>Address</div>
