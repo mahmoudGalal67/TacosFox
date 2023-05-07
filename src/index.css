@@ -309,16 +309,16 @@ position: relative;
   background-repeat: no-repeat;
 }
 
-/* .gallary .gallary-item{
-  width:400px;
+.gallary .gallary-item{
+  width:20%;
   height: 440px;
-} */
+}
 
-/* @media (max-width:640px) {
+@media (max-width:640px) {
   .gallary .gallary-item{
-    width: 80%;
+    min-width: 100vw;
   }
-} */
+}
 
 /* Gallary */
 
