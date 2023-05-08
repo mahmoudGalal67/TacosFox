@@ -28,7 +28,7 @@ function Home() {
       <section className="offer">
         <div className="wreapper">
           <div className="info lg:w-1/2 w-full mr-auto flex flex-col justify-center gap-1 items-center height-full text-white text-2xl sm:text-4xl">
-            <img src="/assets/images/home/giphy00 1.png" className='giff' alt="" />
+            <img src="/assets/images/home/giphy00.gif" className='giff' alt="" />
             <div className='text-black' >BEEF  'N CHEDDAR </div>
             <div className='text-red-500'>CLASSIC SANDWICHES </div>
           </div>
@@ -45,7 +45,6 @@ function Home() {
       <section className="about">
         <div className="wrappper flex md:flex-row flex-col">
           <div className="our-menu relative w-full md:w-1/2 lg:px-28 lg:py-28 sm:p-16 p-5 text-white text-center">
-            <div className='overlay absolute w-full h-full top-0 left-0 bg-fade pointer-events-none'></div>
             <div className='sm:text-4xl text-2xl my-7 font-bold'>Our Menu</div>
             <p>Fast food classics made with joy. Enjoy our great-tasting range of products — Fried Chicken, Burgers, Pies, Spaghetti, Rice Bowls, Wraps and many more!</p>
             <Link to="/menu" className='px-5 py-1 text-lg text-center bg-brown rounded-md mx-auto my-7 w-fit block'>View Menu</Link>  

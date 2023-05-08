@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import Social from '../components/Social'
 import Nav from '../components/Nav'
@@ -6,26 +6,67 @@ import Footer from '../components/Footer'
 import Copyright from '../components/Copy-right'
 import Gallary from '../components/Gallary'
 
+import { toast } from 'react-toastify';
+
 function Contact() {
+
+  const [contactInfo, setcontactInfo] = useState({
+    name:"",
+    email:"",
+    message:""
+  })
+
+  const emailConfig = {
+    Username: "Leo.events.dubai@gmail.com",
+    Password: "AC2E2B2031CC8A4939480C02C7BBF2C540B7",
+    Host: "smtp.elasticemail.com",
+    Post: 2525,
+    To : 'Leo.events.dubai@gmail.com',
+    From : "Leo.events.dubai@gmail.com",
+    Subject : "Tacos Fox Support",
+      Body: `New booking from ${contactInfo.name}<br/><br/><br/>
+      Email : ${contactInfo.email}<br/>
+      Mesaage : ${contactInfo.message}<br/>
+      `
+  }
+
+  const handleSubmit =async (e) => {
+    e.preventDefault()
+      if (window.Email) {
+        window.Email.send(emailConfig).then(() => {
+        setcontactInfo({name:"",email:"",message:""})
+        toast.success('Your message has been sent successfully', {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+    });
+  })}
+}
+
   return (
   <div id='Contact'>
     <Social/>
     <Nav/>
     <div className="contact h-screen">
       <div className="wrapper h-full">
-        <form className=' lg:w-1/2 w-full h-full py-6 md:pl-24 px-8 flex flex-col  justify-center gap-7'>
+        <form onSubmit={handleSubmit} className=' lg:w-1/2 w-full h-full py-6 md:pl-24 px-8 flex flex-col  justify-center gap-7'>
           <div className='contact-title text-4xl md:text-6xl'>Contact US</div>
           <div className="item flex flex-col gap-2">
             <label className='text-white text-xl' htmlFor="name">Your name</label>
-            <input  className='w-8/12 p-4' id='name'  type="text" />
+            <input value={contactInfo.name} required name='name' className='w-8/12 p-4' id='name'  type="text" onChange={(e)=>setcontactInfo((prev)=>({...prev , [e.target.name]:e.target.value }))}/>
           </div>
           <div className="item flex flex-col gap-2">
             <label className='text-white text-xl' htmlFor="email">Your email</label>
-            <input  className='w-8/12 p-4' id='email' type="text" />
+            <input value={contactInfo.email} required name='email' className='w-8/12 p-4' id='email' type="email" onChange={(e)=>setcontactInfo((prev)=>({...prev , [e.target.name]:e.target.value }))}/>
           </div>
           <div className="item flex flex-col gap-2">
             <label className='text-white text-xl' htmlFor="message">Your message</label>
-            <textarea className='p-8' id="message" cols="60" rows="4"></textarea>
+            <textarea value={contactInfo.message} required  name='message' className='p-8' id="message" cols="60" rows="4" onChange={(e)=>setcontactInfo((prev)=>({...prev , [e.target.name]:e.target.value }))}></textarea>
           </div>
           <button className='px-8 py-1 ml-auto text-2xl text-center w-fit text-white bg-brown hover:text-brown hover:bg-white rounded-md mt-5'>Submit</button>
         </form>

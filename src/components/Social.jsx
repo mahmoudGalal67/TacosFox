@@ -12,11 +12,11 @@ function Social() {
           <div>Free Hot Delivery : <a href="https://wa.me/971545574911">+971545574911</a></div>
         </div>
         <div className="social flex items-center gap-5 text-xs">
-          <a href="/"><FaFacebookF/></a>
-          <a href="/"><BsTwitter/></a>
-          <a href="/"><FaInstagram/></a>
-          <a href="/"><FaLinkedinIn/></a>
-          <a href="/"><BsPinterest/></a>
+          <a href="https://www.facebook.com/tacosfoxuae/"><FaFacebookF/></a>
+          <a href="https://twitter.com/tacosfoxuae"><BsTwitter/></a>
+          <a href="https://www.instagram.com/tacosfoxuae/"><FaInstagram/></a>
+          <a href="https://www.linkedin.com/company/tacosfoxuae/"><FaLinkedinIn/></a>
+          <a href="https://www.pinterest.com/tacosfoxuae/"><BsPinterest/></a>
         </div>
       </div>
     </div>

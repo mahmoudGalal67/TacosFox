@@ -12,29 +12,29 @@ function Footer() {
       <div className="main-links xl:w-1/3 md:w-1/2 w-full xl:pl-24">
         <div className="mb-5 relative z-10 font-bold text-lg">Main Links</div>
         <ul>
-          <li className="text-gray-200"><Link to="/">Home</Link></li>
-          <li className="text-gray-200"><Link to="/gallary">Gallary</Link></li>
-          <li className="text-gray-200"><Link to="/menu">Menu</Link></li>
-          <li className="text-gray-200"><Link to="/contact">Contact</Link></li>
+          <li className="text-gray-300 relative z-10"><Link to="/">Home</Link></li>
+          <li className="text-gray-300 relative z-10"><Link to="/gallary">Gallary</Link></li>
+          <li className="text-gray-300 relative z-10"><Link to="/menu">Menu</Link></li>
+          <li className="text-gray-300 relative z-10"><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
       <div className="get-toutch xl:w-1/3 md:w-1/2 w-full">
         <div className="mb-5 relative z-10 font-bold text-lg">Get in touch</div>
-        <p className="my-2 text-gray-200">
+        <p className="my-2 text-gray-300 relative z-10">
           Address: Al Barsha 1-Dubai UAE
         </p>
-        <p className="my-2 text-gray-200">
+        <p className="my-2 text-gray-300 relative z-10">
           Email:
-          <a href="mailto:admin@cedartreehospitality.com">admin@cedartreehospitality.com</a>
+          <a href="mailto:tacosfoxuae@gmail.com">tacosfoxuae@gmail.com</a>
         </p>
         <div
-          className="my-2 text-gray-200 flex gap-3 justify-center md:justify-start items-center"
+          className="my-2 text-gray-300 relative z-10 flex gap-3 justify-center md:justify-start items-center"
         >
           <span>Mobile:</span>
             <a href="tel:+971545574911">+971545574911</a>
         </div>
         <div
-          className="my-2 text-gray-200 flex gap-3 justify-center md:justify-start items-center"
+          className="my-2 text-gray-300 relative z-10 flex gap-3 justify-center md:justify-start items-center"
         >
           <span>Land Line:</span>
             <a href="tel:+971545574911">+971545574911</a>
@@ -59,20 +59,20 @@ function Footer() {
           <div
             className="icon w-10 p-3 rounded-full flex justify-center items-center bg-iconB hover:bg-brown"
           >
-            <a href="/"><FaLinkedinIn/></a>
+            <a href="https://www.linkedin.com/company/tacosfoxuae/"><FaLinkedinIn/></a>
           </div>
           <div
             className="icon w-10 p-3 rounded-full flex justify-center items-center bg-iconB hover:bg-brown"
           >
-            <a href="/"><FaFacebookF/></a>
+            <a href="https://www.facebook.com/tacosfoxuae/"><FaFacebookF/></a>
           </div>
           <div
             className="icon w-10 p-3 rounded-full flex justify-center items-center bg-iconB hover:bg-brown"
-          ><a href="/"><FaInstagram/></a></div>
+          ><a href="https://www.instagram.com/tacosfoxuae/"><FaInstagram/></a></div>
           <div
             className="icon w-10 p-3 rounded-full flex justify-center items-center bg-iconB hover:bg-brown"
           >
-            <a href="/"><BsTwitter/></a>
+            <a href="https://twitter.com/tacosfoxuae"><BsTwitter/></a>
           </div>
         </div>
       </div>
