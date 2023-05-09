@@ -8,7 +8,7 @@ function Social() {
     <div className='social-links p-2 md:px-16 bg-brown'>
       <div className="wrapper flex flex-row gap-3 items-center justify-around text-white">
       <div className="info flex gap-1 items-center text-xs">
-          <img src="/assets/icons/.png" alt="" />
+          <img src="/assets/icons/icon.png" alt="" />
           <div>Free Hot Delivery : <a href="https://wa.me/971545574911">+971545574911</a></div>
         </div>
         <div className="social flex items-center gap-5 text-xs">

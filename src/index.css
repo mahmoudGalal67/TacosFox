@@ -379,6 +379,19 @@ width: 200px;
   background-position: center;
 }
 
+@media (max-width:450px) {
+  .home header{
+    background: url("../public/assets/images/home/02.jpg");
+    background-size: cover;
+    height: 100vh;
+  }
+  .home .offer{
+    background: url("../public/assets/images/home/01.jpg");
+    background-size: cover;
+  }
+}
+
+
 /* Home */
 
 
@@ -401,7 +414,7 @@ background-color: #000000;
 /* Contact */
 
 #Contact .contact{
-  background: url(../public/assets/images/contact/7436711_3529981\ 1.jpg);
+  background: url("../public/assets/images/contact/7436711_3529981\ 1.jpg");
   background-size: cover;
 }
 
@@ -420,6 +433,12 @@ background-color: #000000;
 
 #Contact .gallary{
   background: none;
+}
+@media (max-width:450px) {
+#Contact .contact{
+  background: url("../public/assets/images/home/03.jpg");
+  background-size: cover;
+}
 }
 
 /* Contact */
